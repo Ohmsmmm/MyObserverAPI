@@ -13,7 +13,6 @@ public class Senior implements Observer {
     @Override
     public void update(Observable o, Object arg) {
         System.out.println(
-                "(senior) headquater is updated to " +
-                        ((HeadQuater)o).getSomeData());
+                "(senior)" + arg + ((HeadQuater)o).getSomeData());
     }
 }

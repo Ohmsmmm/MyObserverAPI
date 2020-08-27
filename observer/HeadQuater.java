@@ -14,7 +14,7 @@ public class HeadQuater extends Observable {
     public void setSomeData(int aData) {
         someData = aData;
         setChanged();
-        notifyObservers();
+        notifyObservers("headquarter is updated to ");
     }
     public int getSomeData() {
 	return someData;

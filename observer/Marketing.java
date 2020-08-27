@@ -13,7 +13,6 @@ public class Marketing implements Observer {
     @Override
     public void update(Observable o, Object arg) {
         System.out.println(
-	 "(marketing) headquater is updated to " 
-                + ((HeadQuater)o).getSomeData());
+                "(marketing)" + arg + ((HeadQuater)o).getSomeData());
     }
 }
